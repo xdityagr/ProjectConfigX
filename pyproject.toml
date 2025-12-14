@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ConfigX"
+version = "0.1.0"
+description = "A hierarchical configuration and knowledge engine for dynamic systems"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Aditya Gaur" }
+]
+requires-python = ">=3.9"
+
+dependencies = [
+  "lark",
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/xdityagr/ConfigX"
+Repository = "https://github.com/xdityagr/ConfigX"
+
+[tool.setuptools.packages.find]
+include = ["configx*"]
+exclude = ["readmefiles*"]

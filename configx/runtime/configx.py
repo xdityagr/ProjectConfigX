@@ -108,6 +108,7 @@ class ConfigX:
         load_json: Optional JSON file to bootstrap initial state
         
         """
+        print(f"Welcome to {Style.BRIGHT}{Fore.GREEN}ConfigX Runtime {Fore.WHITE}(v0.1.0)")
 
         # Core in-memory structure
         self._tree = ConfigTree()
